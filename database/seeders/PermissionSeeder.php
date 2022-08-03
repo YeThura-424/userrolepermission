@@ -1,31 +1,32 @@
 <?php
+
 namespace Database\Seeders;
 
-    use Illuminate\Database\Seeder;
-    use Spatie\Permission\Models\Permission;
+use Illuminate\Database\Seeder;
+use Spatie\Permission\Models\Permission;
 
-    class PermissionSeeder extends Seeder
+class PermissionSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
     {
-        /**
-         * Run the database seeds.
-         *
-         * @return void
-         */
-        public function run()
-        {
-            $permissions = [
-                'Category',
-                'Subcategory',
-                'User',
-                'Permission',
-                'Role-Permission',
-                'User-Role-Permission',
-                'Dashboard',
-                'Order'
-            ];
+        $permissions = [
+            'Category',
+            'Subcategory',
+            'User',
+            'Permission',
+            'Role-Permission',
+            'User-Role-Permission',
+            'Dashboard',
+            'Order'
+        ];
 
-            foreach ($permissions as $permission) {
-                Permission::create(['name' => $permission]);
-            }
+        foreach ($permissions as $permission) {
+            Permission::create(['name' => $permission]);
         }
     }
+}
