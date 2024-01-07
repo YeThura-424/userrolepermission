@@ -1,0 +1,42 @@
+Laravel authorization
+
+Authenticate User file exists in vendor/laravel/ui/auth-backend
+
+using username instade of email during login require to change input 
+name to username and need to call a function from authenticate user file 
+
+
+
+
+<tfoot>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Age</th>
+                                    <th>Start date</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </tfoot>
+
+
+
+
+
+
+
+
+                            ->pluck(
+                'role_has_permissions.permission_id',
+                'role_has_permissions.permission_id',
+                'role_has_permissions.create',
+                'role_has_permissions.read',
+                'role_has_permissions.update',
+                'role_has_permissions.delete'
+            )->all();
+
+
+
+
+
+            Laravel Roles and Permissions with Gates and Policies Full Tutorial for Beginners
