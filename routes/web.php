@@ -34,6 +34,7 @@ Auth::routes();
 
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('/category', 'App\Http\Controllers\CategoryController');
+    Route::resource('/subcategory','App\Http\Controllers\SubcategoryController');
     Route::resource('/user', 'App\Http\Controllers\UserController');
     Route::resource('/permission', 'App\Http\Controllers\PermissionController');
     Route::resource('/rolepermission', 'App\Http\Controllers\RolePermissionController');

@@ -126,7 +126,7 @@
             </div>
             <div class="sb-sidenav-menu-heading">Master</div>
             @can('Subcategory')
-            <a class="nav-link {{Request::segment(1) === 'subcategory' ? 'active':''}}" href="index.html">
+            <a class="nav-link {{Request::segment(1) === 'subcategory' ? 'active':''}}" href="{{route('subcategory.index')}}">
               <div class="sb-nav-link-icon">
                 <i class="fas fa-tachometer-alt"></i>
               </div>

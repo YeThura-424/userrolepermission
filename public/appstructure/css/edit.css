@@ -289,8 +289,17 @@ input#search {
     border-radius: 5px;
 }
 
-.modal-content{
+.modal-content {
     background-color: #283046 !important;
     color: white;
     border-color: white !important;
+}
+
+.datatable-dropdown,
+.datatable-info {
+    color: white !important;
+}
+
+option {
+    color: black;
 }
